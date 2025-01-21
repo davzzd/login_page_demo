@@ -24,7 +24,7 @@ const Register = () => {
 
   return (
     <div className="container">
-      <h2>Register</h2>
+      <h2>REGISTER</h2>
       <form onSubmit={handleRegister}>
         <input
           type="text"

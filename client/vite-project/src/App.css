@@ -1,32 +1,41 @@
-/* General Styling */
+/* App.css */
+
+/* Background with Image and Gradient Overlay */
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #08bdff, #2575fc);
-  color: #fff;
+  background: url('https://wallpapershome.com/images/pages/pic_h/803.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  font-family: 'Poppins', sans-serif;
   overflow: hidden;
 }
 
-.container {
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 20px;
-  padding: 30px;
-  text-align: center;
-  color: #fff;
-  width: 350px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Centered Glassy Div */
+.hello {
+  background: rgba(203, 32, 32, 0); /* Slight transparency for glass effect */
+  backdrop-filter: blur(15px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(15px); /* For Safari */
+  border-radius: 15px; /* Rounded corners */
+  padding: 30px 50px; /* Spacing around the text */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0); /* Subtle shadow for depth */
+  text-align: center; /* Center the text */
+  font-size: 24px; /* Font size for "Hello World" */
+  color: white; /* White text for contrast */
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for glass effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
 }
 
-.container:hover {
-  transform: scale(1.02);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+/* Hover Effect for Glassy Div */
+.hello:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
 }
 
 h2 {
@@ -34,12 +43,14 @@ h2 {
   color: #ffffff;
   margin-bottom: 20px;
   font-weight: 500;
+  font-weight: bolder;
+  font-family:sans-serif;
 }
 
 /* Input Fields */
 input {
   width: 100%;
-  padding: 12px;
+  padding: 20px;
   margin: 12px 0;
   border: none;
   border-radius: 10px;
@@ -117,6 +128,8 @@ button.buttons, input {
 }
 
 .switch-form{
+  justify-content: center;
   align-items: center;
-  margin-left: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
