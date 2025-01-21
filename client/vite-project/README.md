@@ -1,8 +1,24 @@
-# React + Vite
+SO HERE ARE THE COMMANDS REQUIERED:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FRONTEND(inside client folder run the following commands):
+                  npm create vite@latest
+                  npm install axios
 
-Currently, two official plugins are available:
+BACKEND(inside server run the following commands):
+                  npm init -y
+                  npm install express mysql2 cors
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+************************************************************************************
+SERVER:
+(in the SQL shell run the following command to create database)
+
+  USE name_of_database;
+  
+  CREATE TABLE users (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(255),
+      email VARCHAR(255) UNIQUE,
+      password VARCHAR(255)
+  );
+**************************************************************************************
+THANK YOUUUUUUU!!!!!!!!!!!!!!!!!!
